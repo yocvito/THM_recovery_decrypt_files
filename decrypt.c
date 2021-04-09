@@ -51,4 +51,6 @@ main(int argc, char **argv)
         perror("munmap");
         exit(1);
     }
+    
+    return 0;
 }
