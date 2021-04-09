@@ -7,7 +7,7 @@ Usage
 ./decrypt <file-to-decrypt>
 ```
 
-You should take a look at decrypt.c:9 and check your key is the same
+You should take a look at decrypt.c:9 and check if your key is the same
 
 Compilation
 ```
