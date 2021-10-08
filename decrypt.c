@@ -52,5 +52,7 @@ main(int argc, char **argv)
         exit(1);
     }
     
+    close(decrypt_fd);
+    
     return 0;
 }
