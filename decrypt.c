@@ -35,7 +35,7 @@ main(int argc, char **argv)
     lseek(decrypt_fd, 0, SEEK_SET);
 
     char *file = mmap(NULL, fdecrypt_size, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_SHARED, decrypt_fd, 0);
-    if (!file)
+    if (file == MAP_FAILED)
     {
         perror("mmap");
         exit(1);
